@@ -22,8 +22,10 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="logo">
+      <nav
+        class="d-flex justify-content-between align-items-center bg-light border-bottom px-4 py-2"
+      >
+        <a href="#">
           <svg
             width="134"
             height="30"
@@ -66,54 +68,25 @@
             <path
               d="M90.2609 0.00241089H97.4307V5.59215H90.2609V0.00241089Z"
               fill="#54B226"
-            ></path>
-          </svg>
+            ></path></svg
+        ></a>
+        <div class="vertical-line"></div>
+        <div class="location">
+          <h5>Delivery in 15 minutes</h5>
+          <p>Hyderabad, India<i class="fa-solid fa-sort-down"></i></p>
         </div>
-        <div class="my-loaction">
-          <h4>Delivery in 9 minutes</h4>
-          <p>Delhi , India</p>
-        </div>
-        <div class="input-container">
+        <div class="search-div">
+          <i class="fa-solid fa-magnifying-glass"></i>
           <input
             type="text"
-            placeholder="Search 'butter'"
-            class="search-input"
+            placeholder="Search 'bread'"
+            class="sewrach-input"
           />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2.2"
-            stroke="currentColor"
-            class="w-6 h-6 search-icon"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-            />
-          </svg>
         </div>
-        <div class="my-button">
-          <button class="login" type="submit">Login</button>
-          <button class="cart" type="submit">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              class="w-6 h-6 cart"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-              />
-            </svg>
-            <div>My cart</div>
-          </button>
-        </div>
+        <button class="btn btn-lg">Login</button>
+        <button class="btn btn-lg btn-success my-cart rounded-4">
+          <i class="fa-solid fa-cart-shopping px-1 py-2"></i>My cart
+        </button>
       </nav>
     </header>
 
@@ -242,12 +215,13 @@
               />
 
               <div class="my-card-title">Mother Dairy Classic</div>
-              <div class="my-card-weight pt-3">400 g</div>
+              <div class="my-card-weight pt-3 price">400 g</div>
               <div
-                class="d-flex w-100 justify-content-between align-items-center"
+                class="d-flex w-100 justify-content-between align-items-center text_1"
               >
                 <div class="my-card-price">₹400</div>
-                <button class="btn btn-outline-success px-4">ADD</button>
+                <p class="canceled-product-price">₹72</p>
+                <button class="btn btn-outline-success px-4 me-3">ADD</button>
               </div>
             </div>
             <div class="card p-3 shadow my-card">
@@ -261,12 +235,12 @@
               />
 
               <div class="my-card-title">Nestle Milkmaid Sweetned</div>
-              <div class="my-card-weight pt-3">380 g</div>
+              <div class="my-card-weight pt-3 price">380 g</div>
               <div
-                class="d-flex w-100 justify-content-between align-items-center"
+                class="d-flex w-100 justify-content-between align-items-center text_1"
               >
                 <div class="my-card-price">₹139</div>
-                <button class="btn btn-outline-success px-4">ADD</button>
+                <button class="btn btn-outline-success px-4 me-3">ADD</button>
               </div>
             </div>
             <div class="card p-3 shadow my-card logo">
@@ -282,10 +256,10 @@
               <div class="my-card-title">Table White Egg 30 Pieced Trey</div>
               <div class="my-card-weight pt-3">30 pieces</div>
               <div
-                class="d-flex w-100 justify-content-between align-items-center"
+                class="d-flex w-100 justify-content-between align-items-center text_1"
               >
                 <div class="my-card-price">₹196</div>
-                <button class="btn btn-outline-success px-4">ADD</button>
+                <button class="btn btn-outline-success px-4 me-3">ADD</button>
               </div>
             </div>
             <div class="card p-3 shadow my-card">
@@ -301,10 +275,10 @@
               <div class="my-card-title">Harvest Gold Hearty Brown</div>
               <div class="my-card-weight pt-3">400 g</div>
               <div
-                class="d-flex w-100 justify-content-between align-items-center"
+                class="d-flex w-100 justify-content-between align-items-center text_1"
               >
                 <div class="my-card-price">₹400</div>
-                <button class="btn btn-outline-success px-4">ADD</button>
+                <button class="btn btn-outline-success px-4 me-3">ADD</button>
               </div>
             </div>
             <div class="card p-3 shadow my-card">
@@ -320,10 +294,11 @@
               <div class="my-card-title">Mother Dairy Paneer</div>
               <div class="my-card-weight pt-3">200 g</div>
               <div
-                class="d-flex w-100 justify-content-between align-items-center"
+                class="d-flex w-100 justify-content-between align-items-center text_1"
               >
                 <div class="my-card-price">₹90</div>
-                <button class="btn btn-outline-success px-4">ADD</button>
+                <p class="canceled-product-price">₹82</p>
+                <button class="btn btn-outline-success px-4 me-3">ADD</button>
               </div>
             </div>
             <div class="card p-3 shadow my-card">
@@ -339,10 +314,11 @@
               <div class="my-card-title">Amul Salted Masti Curd</div>
               <div class="my-card-weight pt-3">400 g</div>
               <div
-                class="d-flex w-100 justify-content-between align-items-center"
+                class="d-flex w-100 justify-content-between align-items-center text_1"
               >
                 <div class="my-card-price">₹43</div>
-                <button class="btn btn-outline-success px-4">ADD</button>
+                <p class="canceled-product-price">₹92</p>
+                <button class="btn btn-outline-success px-4 me-3">ADD</button>
               </div>
             </div>
             <div class="card p-3 shadow my-card">
@@ -355,13 +331,13 @@
                 style="border-radius: 0px; object-fit: fill; cursor: default"
               />
 
-              <div class="my-card-title">Britannia 100%</div>
+              <div class="my-card-title">Mithai Mate</div>
               <div class="my-card-weight pt-3">400 g</div>
               <div
-                class="d-flex w-100 justify-content-between align-items-center"
+                class="d-flex w-100 justify-content-between align-items-center text_1"
               >
                 <div class="my-card-price">₹50</div>
-                <button class="btn btn-outline-success px-4">ADD</button>
+                <button class="btn btn-outline-success px-4 me-3">ADD</button>
               </div>
             </div>
             <div class="card p-3 shadow my-card">
@@ -374,13 +350,13 @@
                 style="border-radius: 0px; object-fit: fill; cursor: default"
               />
 
-              <div class="my-card-title">Britannia 100%</div>
+              <div class="my-card-title">Diced Cheese</div>
               <div class="my-card-weight pt-3">400 g</div>
               <div
-                class="d-flex w-100 justify-content-between align-items-center"
+                class="d-flex w-100 justify-content-between align-items-center text_1"
               >
                 <div class="my-card-price">₹50</div>
-                <button class="btn btn-outline-success px-4">ADD</button>
+                <button class="btn btn-outline-success px-4 me-3">ADD</button>
               </div>
             </div>
             <div class="card p-3 shadow my-card">
@@ -393,23 +369,25 @@
                 style="border-radius: 0px; object-fit: fill; cursor: default"
               />
 
-              <div class="my-card-title">Britannia 100%</div>
+              <div class="my-card-title">Soft Paneer</div>
               <div class="my-card-weight pt-3">400 g</div>
               <div
-                class="d-flex w-100 justify-content-between align-items-center"
+                class="d-flex w-100 justify-content-between align-items-center text_1"
               >
                 <div class="my-card-price">₹50</div>
-                <button class="btn btn-outline-success px-4">ADD</button>
+                <button class="btn btn-outline-success px-4 me-3">ADD</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <br />
-    <br />
-
-    <br />
-    <br />
+    <footer class="my-footer">
+      <div class="row-1">
+        Made with
+        <i class="fa-sharp fa-solid fa-heart" style="color: #c00707"></i> by Ram
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
